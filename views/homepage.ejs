@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost:3000/static/css/style.css">
+    <title>SocketIO | SuperExercise</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="header__text">Socket IO Super Exercise</h1>
+    </div>
+    <div class="app">
+        <div class="section section__1">
+            <h2 class="heading-1 heading-box">Create User</h2>
+            <form id = "form-create-user" action="">
+                <div class="input-container">
+                    <label class = "label" for="username-create-user">Username : </label>
+                    <input type="text" name="username" id="username-create-user" class = "input">
+                    <div class="error-validation"></div>
+                </div> 
+                <div class="input-container">
+                    <label class = "label" for="email-create-user">Email : </label>
+                    <input type="email" name="email" id="email-create-user" class = "input">
+                    <div class="error-validation"></div>
+                </div>  
+                <div class="input-container">
+                    <label class = "label" for="password-create-user">Password : </label>
+                    <input type="password" name="password" id="password-create-user" class = "input">
+                    <div class="error-validation"></div>
+                </div> 
+                <button class = "btn btn--success btn--active">Submit</button>
+            </form>
+        </div>
+        <div class="section section__2">
+            <h2 class="heading-1 heading-box">Get User Info</h2>
+            <form id = "form-get-user">
+                <div class="input-container">
+                    <label class = "label" for="email-get-user">Email : </label>
+                    <input type="email" name="email" id="email-get-user" class = "input">
+                </div>  
+                <div class="input-container">
+                    <label class = "label" for="password-get-user">Password : </label>
+                    <input type="password" name="password" id="password-get-user" class = "input">
+                </div> 
+                <button class = "btn btn--success btn--active">Submit</button>
+            </form>
+        </div>
+        <div class="section section__3">
+            <h2 class="heading-1 heading-box">Update User Info</h2>
+            <form id = "form-update-user">
+                <div class="input-container">
+                    <label class = "label" for="email-update-user">Email : </label>
+                    <input type="email" name="email" id="email-update-user" class = "input">
+                </div>  
+                <div class="input-container">
+                    <label class = "label" for="password-update-user">Password : </label>
+                    <input type="password" name="password" id="password-update-user" class = "input">
+                </div> 
+                <div class="input-container">
+                    <label class = "label" for="username-update-user">New Username : </label>
+                    <input type="text" name="username" id="username-update-user" class = "input">
+                </div> 
+                <button class = "btn btn--success btn--active">Submit</button>
+            </form>
+        </div>
+        <div class="section section__4">
+            <h2 class="heading-1 heading-box">Update Password</h2>
+            <form id = "form-update-password">
+                <div class="input-container">
+                    <label class = "label" for="email-update-password">Email : </label>
+                    <input type="email" name="email" id="email-update-password" class = "input">
+                </div>  
+                <div class="input-container">
+                    <label class = "label" for="password-update-password">Password : </label>
+                    <input type="password" name="password" id="password-update-password" class = "input">
+                </div> 
+                <div class="input-container">
+                    <label class = "label" for="confirm-update-password">New Password : </label>
+                    <input type="password" name="confrim_password" id="confirm-update-password" class = "input">
+                </div> 
+                <button class = "btn btn--success btn--active">Submit</button>
+            </form>
+
+        </div>
+        
+    </div>
+
+    <!-- SOCKET IO CLIENT -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src = "http://localhost:3000/static/js/script.js"></script>
+</body>
+</html>

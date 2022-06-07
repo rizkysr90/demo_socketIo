@@ -1,6 +1,31 @@
 {
   "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.1",
+    "ejs": "^3.1.8",
     "express": "^4.18.1",
+    "pg": "^8.7.3",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.20.1",
     "socket.io": "^4.5.1"
-  }
+  },
+  "scripts": {
+    "start": "node server.js",
+    "compile:sass": "sass ./sass/main.scss ./public/css/style.css -w"
+  },
+  "name": "socketio-practice",
+  "version": "1.0.0",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rizkysr90/demo_socketIo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rizkysr90/demo_socketIo/issues"
+  },
+  "homepage": "https://github.com/rizkysr90/demo_socketIo#readme",
+  "description": ""
 }
