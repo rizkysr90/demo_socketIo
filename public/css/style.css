@@ -38,6 +38,10 @@ body {
   border-bottom: 1px solid #121212;
 }
 
+.mb-5 {
+  margin-bottom: 5rem;
+}
+
 .heading-1 {
   font-weight: 400;
   font-size: 1.4rem;
@@ -145,6 +149,39 @@ form {
   margin-top: 2px;
   font-size: 1.2rem;
   color: orangered;
+}
+
+.card-userData {
+  position: relative;
+  width: 50%;
+  background-image: linear-gradient(to right, #371B58, #4C3575);
+  display: flex;
+  flex-direction: column;
+  align-items: space-around;
+  border-radius: 10px;
+  padding: 3rem 2.5rem;
+  margin: 4rem 0 2.5rem 0;
+}
+.card-userData__sign {
+  align-self: center;
+  font-weight: 600;
+  color: #121212;
+  background-color: yellow;
+  padding: 0.8rem 1rem;
+  position: absolute;
+  top: -2rem;
+}
+.card-userData p {
+  margin: 0;
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+  background-color: var(--color-primary);
 }
 
 /*# sourceMappingURL=style.css.map */
